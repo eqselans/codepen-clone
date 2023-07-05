@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Space+Mono&display=swap" rel="stylesheet">
     
+    <title>Online Web Code Editor - Emirhan Aksu  </title>
+</head>
+<body class="bg-dark text-white">
+    
+    <div class="container d-flex p-2 w-100">
+        <div class="left p-1 float-start">
+            
+            <label for="html" class="bg-black d-flex align-items-center"><i class="fab fa-html5" style="color: #ff5233; padding: 5px;"></i>HTML</label>
+            <textarea name="html" id="html-code" class="text-white w-100 p-2" cols="30" rows="10" onkeyup="run()"></textarea>
+            <label for="css" class="bg-black d-flex align-items-center"><i class="fab fa-css3-alt" style="color: #4ea6f9; padding: 5px;"></i>CSS</label>
+            <textarea name="css" id="css-code" class="text-white w-100 p-2" cols="30" rows="10" onkeyup="run()"></textarea>
+            <label for="js" class="bg-black d-flex align-items-center"><i class="fab fa-js" style="color: #f1e23b; padding: 5px;"></i>Javascript</label>
+            <textarea name="js" id="js-code" class="text-white w-100 p-2" cols="30" rows="10" onkeyup="run()"></textarea>
+            <button class="btn btn-success float-end" id="download-file"><i class="fas fa-file-archive" style="padding: 5px;"></i>İndir</button>
+        </div>
+        <div class="right p-1 text-dark">
+            <label for="" class="text-white-50"><i class="fas fa-terminal" style="padding: 5px;"></i>Output</label>
+            <iframe id="out-put" ></iframe>
+        </div>
 
+    </div>
+    <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
